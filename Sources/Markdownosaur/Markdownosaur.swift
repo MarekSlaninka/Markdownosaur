@@ -11,7 +11,9 @@ import Markdown
 public struct Markdownosaur: MarkupVisitor {
     let baseFontSize: CGFloat = 15.0
 
-    public init() {}
+    public init(baseFontSize: CGFloat = 15.0) {
+        baseFontSize = baseFontSize
+    }
     
     public mutating func attributedString(from document: Document) -> NSAttributedString {
         return visit(document)
