@@ -9,7 +9,7 @@ import UIKit
 import Markdown
 
 public struct Markdownosaur: MarkupVisitor {
-    let baseFontSize: CGFloat = 15.0
+    let baseFontSize: CGFloat
 
     public init(baseFontSize: CGFloat = 15.0) {
         self.baseFontSize = baseFontSize
